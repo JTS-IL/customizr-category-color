@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: Color categories
+ * Plugin Name: Color Categories
  * Plugin URI: http://www.glezer.co.il
  * Description: Color bars for each category
  * Version: 1.0
@@ -112,7 +112,7 @@ add_filter ('manage_category_custom_column', 'gycc_manage_category_custom_fields
 function gycc_add_styles() {
 ?>
 <style id="color-categories">
-.grid-container__classic.tc-grid-border .grid__item {
+.grid-container__classic .grid__item {
 	border-bottom-style:solid;
 	border-bottom-width:8px;
 }
@@ -132,12 +132,12 @@ function gycc_add_styles() {
 		}
 //		echo '.category-'.$cat_class.'{ color:green;}';
 ?>
-		<?php echo '.grid-container__classic.tc-grid-border .category-'.$cat_class.' .grid__item'; ?> {
+		<?php echo '.grid-container__classic .category-'.$cat_class.' .grid__item'; ?> {
 			border-bottom-color:<?php echo $cat_color; ?>;
 		}
 		li.cat-item-<?php echo $my_cat_id?> a{
-			background-color:<?php echo $cat_color;?>
-			color:<?php echo $cat_text_color;?>
+			background-color:<?php echo $cat_color;?>75;
+			color:<?php echo $cat_text_color;?>;
 		}
 <?php
 
